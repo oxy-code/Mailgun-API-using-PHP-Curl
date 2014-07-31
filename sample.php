@@ -9,7 +9,7 @@ $bounced_list = $mailgun->getBounces(array('limit' => 1000));
 // Without parameters
 $domains = $mailgun->getDomains();
 // With custom parameters and url
-$messages = $mailgun->get('/myhint.co/bounces/lfwilson25@gmail.com', array());
+$messages = $mailgun->get("/$domain/bounces/lfwilson25@gmail.com", array());
 echo "<pre>";
 print_r($domains);
 echo "</pre>";
